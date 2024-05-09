@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grade_Calculator", "Grade_Calculator\Grade_Calculator.csproj", "{7D6ED75E-5629-4ACA-8E62-EA48CD59AAB9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{210E4D7A-E59F-457E-9181-2C0ECF0023FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{4C4B699A-F753-4F0A-BC4F-A96A16C55B39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grade_Calculator_UI", "Grade_Calculator_UI\Grade_Calculator_UI.csproj", "{31CA6BB3-274A-4381-A5CC-D967F0B9E1DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +18,13 @@ Global
 		{7D6ED75E-5629-4ACA-8E62-EA48CD59AAB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D6ED75E-5629-4ACA-8E62-EA48CD59AAB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D6ED75E-5629-4ACA-8E62-EA48CD59AAB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31CA6BB3-274A-4381-A5CC-D967F0B9E1DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31CA6BB3-274A-4381-A5CC-D967F0B9E1DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31CA6BB3-274A-4381-A5CC-D967F0B9E1DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31CA6BB3-274A-4381-A5CC-D967F0B9E1DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D6ED75E-5629-4ACA-8E62-EA48CD59AAB9} = {4C4B699A-F753-4F0A-BC4F-A96A16C55B39}
+		{31CA6BB3-274A-4381-A5CC-D967F0B9E1DD} = {210E4D7A-E59F-457E-9181-2C0ECF0023FD}
 	EndGlobalSection
 EndGlobal
