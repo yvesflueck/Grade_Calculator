@@ -11,7 +11,7 @@ namespace GradeCalculatorBackend.Controllers
         [Route("CalculateGrade")]
         public JsonResult CalculateGrade()
         {
-            return new JsonResult("Example:Test");
+            return new JsonResult("2.7");
         }
     }
 }

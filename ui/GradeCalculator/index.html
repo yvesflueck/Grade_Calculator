@@ -1,0 +1,32 @@
+<div id="app">
+    <h2>Grade Calculator</h2>
+    <p>
+        <b>{{grade}}</b>
+    </p>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js" integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module">
+    import { createApp, ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+    const API_URL="https://localhost:7278/"
+    createApp({
+    data() {
+        return {
+            title:"Grade Calculator",
+            grade:0
+        }
+    },
+    methods:{
+        async calculateGrade(){
+            axios.get(API_URL+"api/gradecalculator/CalculateGrade").then(
+                (response)=>{
+                    this.grade=response.data;
+                }
+            )
+        }
+    }, mounted:function(){
+        this.calculateGrade();
+    }
+    }).mount('#app')
+</script>
