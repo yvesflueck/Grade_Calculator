@@ -1,1 +1,2 @@
-api/GradeCalculatorBackend/.vs/GradeCalculatorBackend/FileContentIndex/d497f2a5-5221-4582-bd44-bc8e91a5431c.vsidx
+#remove visual studio specific files
+api/GradeCalculatorBackend/.vs
