@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "0rRUayA+PLYS7dCql1GQz/EnyU3kwT7U+aEXEhVhP8w=",
+  "Source": "GradeCalculatorBackend",
+  "BasePath": "_content/GradeCalculatorBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
