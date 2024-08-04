@@ -12,9 +12,9 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("GradeCalculatorBackend")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03005c8fe9539f3243f2df5c91f0f8d01a25b2e3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d8a6c042f621e393fe299fa180321d15f050bbc")]
 [assembly: System.Reflection.AssemblyProductAttribute("GradeCalculatorBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GradeCalculatorBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradeCalculatorBackend", "GradeCalculatorBackend\GradeCalculatorBackend.csproj", "{6D5364FA-0B38-4B83-8AFD-6346F8053201}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GradeCalculatorBackend", "GradeCalculatorBackend\GradeCalculatorBackend.csproj", "{6D5364FA-0B38-4B83-8AFD-6346F8053201}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{BFE0E6D1-A1B9-4DC8-B4E2-ABCAD7CB3A5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{6D5364FA-0B38-4B83-8AFD-6346F8053201}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D5364FA-0B38-4B83-8AFD-6346F8053201}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D5364FA-0B38-4B83-8AFD-6346F8053201}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFE0E6D1-A1B9-4DC8-B4E2-ABCAD7CB3A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFE0E6D1-A1B9-4DC8-B4E2-ABCAD7CB3A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFE0E6D1-A1B9-4DC8-B4E2-ABCAD7CB3A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFE0E6D1-A1B9-4DC8-B4E2-ABCAD7CB3A5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
