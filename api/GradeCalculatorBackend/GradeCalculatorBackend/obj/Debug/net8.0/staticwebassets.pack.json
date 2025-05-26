@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "P:\\IT-Projects\\Private\\Grade_Calculator\\api\\GradeCalculatorBackend\\GradeCalculatorBackend\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GradeCalculatorBackend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GradeCalculatorBackend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.GradeCalculatorBackend.props",
+      "PackagePath": "build\\GradeCalculatorBackend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.GradeCalculatorBackend.props",
+      "PackagePath": "buildMultiTargeting\\GradeCalculatorBackend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.GradeCalculatorBackend.props",
+      "PackagePath": "buildTransitive\\GradeCalculatorBackend.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

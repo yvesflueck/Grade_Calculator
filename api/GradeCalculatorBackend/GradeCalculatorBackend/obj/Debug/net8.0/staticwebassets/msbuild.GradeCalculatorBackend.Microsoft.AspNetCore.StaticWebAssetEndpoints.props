@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/GradeCalculatorBackend/index.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-eRUD1HJ/LNKqfbi0ErlnSR0k0hPn1IEcDVU5YWRNrno="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1720"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022eRUD1HJ/LNKqfbi0ErlnSR0k0hPn1IEcDVU5YWRNrno=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 09:14:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/GradeCalculatorBackend/index.nw3bysfvga.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"nw3bysfvga"},{"Name":"integrity","Value":"sha256-eRUD1HJ/LNKqfbi0ErlnSR0k0hPn1IEcDVU5YWRNrno="},{"Name":"label","Value":"_content/GradeCalculatorBackend/index.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1720"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022eRUD1HJ/LNKqfbi0ErlnSR0k0hPn1IEcDVU5YWRNrno=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 09:14:12 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>
