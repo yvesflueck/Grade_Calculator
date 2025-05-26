@@ -1,11 +1,125 @@
 {
   "Version": 1,
-  "Hash": "0rRUayA+PLYS7dCql1GQz/EnyU3kwT7U+aEXEhVhP8w=",
+  "Hash": "/tAsb7Tbjp30R2tMBh+zmzJuB1wi1rRlD54TFiF8wHg=",
   "Source": "GradeCalculatorBackend",
   "BasePath": "_content/GradeCalculatorBackend",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "GradeCalculatorBackend\\wwwroot",
+      "Source": "GradeCalculatorBackend",
+      "ContentRoot": "P:\\IT-Projects\\Private\\Grade_Calculator\\api\\GradeCalculatorBackend\\GradeCalculatorBackend\\wwwroot\\",
+      "BasePath": "_content/GradeCalculatorBackend",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "P:\\IT-Projects\\Private\\Grade_Calculator\\api\\GradeCalculatorBackend\\GradeCalculatorBackend\\wwwroot\\index.html",
+      "SourceId": "GradeCalculatorBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "P:\\IT-Projects\\Private\\Grade_Calculator\\api\\GradeCalculatorBackend\\GradeCalculatorBackend\\wwwroot\\",
+      "BasePath": "_content/GradeCalculatorBackend",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nw3bysfvga",
+      "Integrity": "eRUD1HJ/LNKqfbi0ErlnSR0k0hPn1IEcDVU5YWRNrno=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.html",
+      "AssetFile": "P:\\IT-Projects\\Private\\Grade_Calculator\\api\\GradeCalculatorBackend\\GradeCalculatorBackend\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eRUD1HJ/LNKqfbi0ErlnSR0k0hPn1IEcDVU5YWRNrno=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 09:14:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eRUD1HJ/LNKqfbi0ErlnSR0k0hPn1IEcDVU5YWRNrno="
+        }
+      ]
+    },
+    {
+      "Route": "index.nw3bysfvga.html",
+      "AssetFile": "P:\\IT-Projects\\Private\\Grade_Calculator\\api\\GradeCalculatorBackend\\GradeCalculatorBackend\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1720"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eRUD1HJ/LNKqfbi0ErlnSR0k0hPn1IEcDVU5YWRNrno=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 26 May 2025 09:14:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nw3bysfvga"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eRUD1HJ/LNKqfbi0ErlnSR0k0hPn1IEcDVU5YWRNrno="
+        }
+      ]
+    }
+  ]
 }

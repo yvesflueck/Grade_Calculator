@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <!-- Add Vue.js from CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+    <!-- Add Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <h2>Grade Calculator</h2>
+        <p>
+            <b>{{grade}}</b>
+        </p>
+        <!-- Add an error message display -->
+        <p v-if="error" style="color: red;">
+            {{error}}
+        </p>
+    </div>
+
+    <script>
+        const { createApp } = Vue;
+        
+        createApp({
+            data() {
+                return {
+                    title: "Grade Calculator",
+                    grade: 0,
+                    error: null,
+                    API_URL: "https://localhost:5135/"
+                }
+            },
+            methods: {
+                async calculateGrade() {
+                    try {
+                        const response = await axios.get(this.API_URL + "api/gradecalculator/CalculateGrade");
+                        this.grade = response.data;
+                        this.error = null;
+                    } catch (err) {
+                        this.error = "Error fetching grade: " + (err.response?.data || err.message);
+                        console.error("API Error:", err);
+                    }
+                }
+            },
+            mounted() {
+                this.calculateGrade();
+            }
+        }).mount('#app')
+    </script>
+</body>
+</html>

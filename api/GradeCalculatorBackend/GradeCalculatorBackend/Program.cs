@@ -1,35 +1,31 @@
-using Newtonsoft.Json.Serialization;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//JSON Serializer
-builder.Services.AddControllers().AddNewtonsoftJson(options=>
-options.SerializerSettings.ReferenceLoopHandling=Newtonsoft.Json.ReferenceLoopHandling.Ignore).AddNewtonsoftJson(
-    options=>options.SerializerSettings.ContractResolver=new DefaultContractResolver());
-
 var app = builder.Build();
-
-//Enable CORS (Not recommended in production!)
-app.UseCors(c=>c.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        // Change the Swagger endpoint to a different route
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+        // Remove this line or change it to false if you don't want Swagger as the default route
+        c.RoutePrefix = "swagger";
+    });
 }
 
+// These must come before MapControllers
 app.UseHttpsRedirection();
+app.UseDefaultFiles();
+app.UseStaticFiles();
 
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
