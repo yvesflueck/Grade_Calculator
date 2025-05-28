@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/tAsb7Tbjp30R2tMBh+zmzJuB1wi1rRlD54TFiF8wHg=",
+  "Hash": "iTlHyUOzu0fBgl3RoYrNmvvxipQEabyyTX9K0PQ1Ogc=",
   "Source": "GradeCalculatorBackend",
   "BasePath": "_content/GradeCalculatorBackend",
   "Mode": "Default",
@@ -31,14 +31,59 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "nw3bysfvga",
-      "Integrity": "eRUD1HJ/LNKqfbi0ErlnSR0k0hPn1IEcDVU5YWRNrno=",
+      "Fingerprint": "3umzhj52q9",
+      "Integrity": "pfSSkxAzB2qF8dAxS3rymWBRk9Ar8Ff8AX1GKTw25VU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "index.3umzhj52q9.html",
+      "AssetFile": "P:\\IT-Projects\\Private\\Grade_Calculator\\api\\GradeCalculatorBackend\\GradeCalculatorBackend\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1798"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pfSSkxAzB2qF8dAxS3rymWBRk9Ar8Ff8AX1GKTw25VU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 May 2025 09:49:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3umzhj52q9"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pfSSkxAzB2qF8dAxS3rymWBRk9Ar8Ff8AX1GKTw25VU="
+        }
+      ]
+    },
     {
       "Route": "index.html",
       "AssetFile": "P:\\IT-Projects\\Private\\Grade_Calculator\\api\\GradeCalculatorBackend\\GradeCalculatorBackend\\wwwroot\\index.html",
@@ -50,7 +95,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1720"
+          "Value": "1798"
         },
         {
           "Name": "Content-Type",
@@ -58,11 +103,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"eRUD1HJ/LNKqfbi0ErlnSR0k0hPn1IEcDVU5YWRNrno=\""
+          "Value": "\"pfSSkxAzB2qF8dAxS3rymWBRk9Ar8Ff8AX1GKTw25VU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 09:14:12 GMT"
+          "Value": "Wed, 28 May 2025 09:49:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -72,52 +117,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-eRUD1HJ/LNKqfbi0ErlnSR0k0hPn1IEcDVU5YWRNrno="
-        }
-      ]
-    },
-    {
-      "Route": "index.nw3bysfvga.html",
-      "AssetFile": "P:\\IT-Projects\\Private\\Grade_Calculator\\api\\GradeCalculatorBackend\\GradeCalculatorBackend\\wwwroot\\index.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1720"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"eRUD1HJ/LNKqfbi0ErlnSR0k0hPn1IEcDVU5YWRNrno=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 26 May 2025 09:14:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "nw3bysfvga"
-        },
-        {
-          "Name": "label",
-          "Value": "index.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-eRUD1HJ/LNKqfbi0ErlnSR0k0hPn1IEcDVU5YWRNrno="
+          "Value": "sha256-pfSSkxAzB2qF8dAxS3rymWBRk9Ar8Ff8AX1GKTw25VU="
         }
       ]
     }

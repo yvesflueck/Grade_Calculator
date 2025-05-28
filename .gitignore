@@ -1,2 +1,47 @@
-#remove visual studio specific files
-api/GradeCalculatorBackend/.vs
+# .NET Core build folders
+bin/
+obj/
+Debug/
+Release/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+.vs/
+
+# IDE settings
+.vscode/
+.idea/
+*.sln.iml
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio cache/options directory
+.vs/
+
+# Temp files
+*~
+*.swp
+*.tmp
+
+# Node modules if you're using any
+node_modules/
+
+# Environment files
+*.env
+appsettings.Development.json
