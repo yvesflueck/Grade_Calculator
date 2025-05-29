@@ -11,46 +11,45 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      # Checkout the code
-      - uses: actions/checkout@v4
-      
-      # Setup .NET
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: '8.0.x'
-      
-      # Setup Node.js
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: '**/package-lock.json'
-      
-      # Restore .NET dependencies
-      - name: Restore .NET dependencies
-        run: dotnet restore
-      
-      # Build .NET project
-      - name: Build .NET project
-        run: dotnet build --configuration Release --no-restore
-      
-      # Run .NET tests
-      - name: Run .NET tests
-        run: dotnet test --no-restore --verbosity normal
-      
-      # Install Vue.js dependencies
-      - name: Install Vue dependencies
-        working-directory: ./Grade_Calculator/api/GradeCalculatorFrontend/src  # Adjust this path to your Vue app location
-        run: npm ci
-      
-      # Run Vue.js tests
-      - name: Run Vue tests
-        working-directory: ./Grade_Calculator/api/GradeCalculatorFrontend/src  # Adjust this path to your Vue app location
-        run: npm run test:unit
-      
-      # Build Vue.js project
-      - name: Build Vue project
-        working-directory: ./Grade_Calculator/api/GradeCalculatorFrontend/src  # Adjust this path to your Vue app location
-        run: npm run build
+    # Checkout the code
+    - uses: actions/checkout@v4
+
+    # Setup .NET
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+
+    # Setup Node.js
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+
+    # Restore .NET dependencies
+    - name: Restore .NET dependencies
+      run: dotnet restore GradeCalculatorBackend.sln
+
+    # Build .NET project
+    - name: Build .NET project
+      run: dotnet build GradeCalculatorBackend.sln --configuration Release --no-restore
+
+    # Run .NET tests
+    - name: Run .NET tests
+      run: dotnet test GradeCalculatorBackend.sln --no-restore --verbosity normal
+
+    # Install Vue.js dependencies
+    - name: Install Vue dependencies
+      working-directory: ./Grade_Calculator/api/GradeCalculatorFrontend/src  # Adjust this path to your Vue app location
+      run: npm ci
+
+    # Run Vue.js tests
+    - name: Run Vue tests
+      working-directory: ./Grade_Calculator/api/GradeCalculatorFrontend/src  # Adjust this path to your Vue app location
+      run: npm run test:unit
+
+    # Build Vue.js project
+    - name: Build Vue project
+      working-directory: ./Grade_Calculator/api/GradeCalculatorFrontend/src  # Adjust this path to your Vue app location
+      run: npm run build
