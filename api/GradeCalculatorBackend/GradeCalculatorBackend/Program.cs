@@ -1,21 +1,22 @@
 var builder = WebApplication.CreateBuilder(args);
 
+// Add CORS configuration
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("DevCors", policy =>
+    {
+        policy.WithOrigins("http://localhost:5173")
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
+
+
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
-// Add CORS if needed
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowAll",
-        builder =>
-        {
-            builder.AllowAnyOrigin()
-                   .AllowAnyMethod()
-                   .AllowAnyHeader();
-        });
-});
 
 var app = builder.Build();
 
@@ -23,25 +24,13 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
-        c.RoutePrefix = "swagger";
-    });
+    app.UseSwaggerUI();
 }
 
+// Move CORS middleware before HTTPS redirection
+app.UseCors("DevCors");
+
 app.UseHttpsRedirection();
-
-// Configure static files with default files
-app.UseDefaultFiles(new DefaultFilesOptions
-{
-    DefaultFileNames = new List<string> { "index.html" }
-});
-app.UseStaticFiles();
-
-// Use CORS if needed
-app.UseCors("AllowAll");
-
 app.UseAuthorization();
 app.MapControllers();
 
