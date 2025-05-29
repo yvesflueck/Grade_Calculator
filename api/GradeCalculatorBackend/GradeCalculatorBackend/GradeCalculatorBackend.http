@@ -1,6 +1,6 @@
 @GradeCalculatorBackend_HostAddress = http://localhost:5065
 
-GET {{GradeCalculatorBackend_HostAddress}}/weatherforecast/
+GET https://localhost:44300/api/GradeCalculator/CalculateGrade
 Accept: application/json
 
 ###
