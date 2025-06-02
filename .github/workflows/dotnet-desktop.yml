@@ -50,15 +50,15 @@ jobs:
 
     # Install Vue.js dependencies
     - name: Install Vue dependencies
-      working-directory: ./Grade_Calculator/api/GradeCalculatorFrontend/src  # Adjust this path to your Vue app location
+      working-directory: ./api/GradeCalculatorFrontend/src  # Adjust this path to your Vue app location
       run: npm ci
 
     # Run Vue.js tests
     - name: Run Vue tests
-      working-directory: ./Grade_Calculator/api/GradeCalculatorFrontend/src  # Adjust this path to your Vue app location
+      working-directory: ./api/GradeCalculatorFrontend/src  # Adjust this path to your Vue app location
       run: npm run test:unit
 
     # Build Vue.js project
     - name: Build Vue project
-      working-directory: ./Grade_Calculator/api/GradeCalculatorFrontend/src  # Adjust this path to your Vue app location
+      working-directory: ./api/GradeCalculatorFrontend/src  # Adjust this path to your Vue app location
       run: npm run build
