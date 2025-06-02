@@ -14,7 +14,6 @@ Release/
 # IDE settings
 .vscode/
 .idea/
-*.sln.iml
 
 # Build results
 [Dd]ebug/

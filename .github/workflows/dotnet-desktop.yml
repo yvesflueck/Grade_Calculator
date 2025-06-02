@@ -7,10 +7,15 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build-and-test:
+  build:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
     # Checkout the code
     - uses: actions/checkout@v4
 
@@ -29,16 +34,16 @@ jobs:
         cache-dependency-path: '**/package-lock.json'
 
     # Restore .NET dependencies
-    - name: Restore .NET dependencies
-      run: dotnet restore Grade_Calculator/api/GradeCalculatorBackend.sln
+    - name: Restore
+      run: dotnet restore ./GradeCalculatorBackend.sln
 
     # Build .NET project
-    - name: Build .NET project
-      run: dotnet build Grade_Calculator/api/GradeCalculatorBackend.sln --configuration Release --no-restore
+    - name: Build
+      run: dotnet build ./GradeCalculatorBackend.sln --configuration ${{ env.Configuration }} --no-restore
 
     # Run .NET tests
-    - name: Run .NET tests
-      run: dotnet test Grade_Calculator/api/GradeCalculatorBackend.sln --no-restore --verbosity normal
+    - name: Test
+      run: dotnet test ./GradeCalculatorBackend.sln --no-restore --verbosity normal
 
     # Install Vue.js dependencies
     - name: Install Vue dependencies
