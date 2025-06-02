@@ -35,12 +35,12 @@ jobs:
 
     # Restore .NET dependencies
     - name: Restore
-      working-directory: ./Grade_Calculator/api/GradeCalculatorBackend
+      working-directory: ./api/GradeCalculatorBackend
       run: dotnet restore
 
     # Build .NET project
     - name: Build
-      working-directory: ./Grade_Calculator/api/GradeCalculatorBackend
+      working-directory: ./api/GradeCalculatorBackend
       run: dotnet build --configuration ${{ env.Configuration }} --no-restore
 
     # Run .NET tests
