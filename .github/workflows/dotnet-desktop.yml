@@ -41,7 +41,7 @@ jobs:
     # Build .NET project
     - name: Build
       working-directory: ./api/GradeCalculatorBackend
-      run: dotnet build --configuration ${{ env.Configuration }} --no-restore
+      run: dotnet build --configuration Release --no-restore
 
     # Run .NET tests
     - name: Test
