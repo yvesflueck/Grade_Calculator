@@ -45,6 +45,7 @@ jobs:
 
     # Run .NET tests
     - name: Test
+      working-directory: ./api/GradeCalculatorBackend
       run: dotnet test --no-restore --verbosity normal
 
     # Install Vue.js dependencies
