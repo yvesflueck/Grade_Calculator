@@ -35,15 +35,15 @@ jobs:
 
     # Restore .NET dependencies
     - name: Restore
-      run: dotnet restore ./GradeCalculatorBackend.sln
+      run: dotnet restore
 
     # Build .NET project
     - name: Build
-      run: dotnet build ./GradeCalculatorBackend.sln --configuration ${{ env.Configuration }} --no-restore
+      run: dotnet build --configuration ${{ env.Configuration }} --no-restore
 
     # Run .NET tests
     - name: Test
-      run: dotnet test ./GradeCalculatorBackend.sln --no-restore --verbosity normal
+      run: dotnet test --no-restore --verbosity normal
 
     # Install Vue.js dependencies
     - name: Install Vue dependencies
